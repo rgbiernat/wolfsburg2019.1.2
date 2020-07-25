@@ -39,7 +39,7 @@ GLUON_SITE_PACKAGES := \
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := wolfsburg-1.07
+DEFAULT_GLUON_RELEASE := wolfsburg-1.08
 
 ##	GLUON_RELEASE
 #		call make with custom GLUON_RELEASE flag, to use your own release version scheme.
@@ -50,7 +50,7 @@ DEFAULT_GLUON_RELEASE := wolfsburg-1.07
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
-
+GLUON_DEPRECATED ?= upgrade
 GLUON_PRIORITY ?= 0
 
 # Region code required for some images; supported values: us eu
